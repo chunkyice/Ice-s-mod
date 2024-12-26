@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Blocks.BARREL"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GoldenAppleBarrel"
+    },
+    "name": "golden_apple_barrel_recipe",
+    "namespace": "mod"
+  }
+}

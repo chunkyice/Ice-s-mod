@@ -1,0 +1,9 @@
+{
+  "parent": "ices_mod:custom/mind_fuck_model",
+  "textures": {
+    "all": "ices_mod:block/mind_fuck_texture",
+    "particle": "ices_mod:block/mind_fuck_texture",
+    "0": "ices_mod:block/mind_fuck_texture"
+  },
+  "render_type": "translucent"
+}

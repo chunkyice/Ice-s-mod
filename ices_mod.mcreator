@@ -1,0 +1,400 @@
+{
+  "mod_elements": [
+    {
+      "name": "AmethystBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/models/item/amethyst_book.json",
+          "src/main/java/net/icefighter/icesmod/item/AmethystBookItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AmethystBookProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_book_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AmethystBookProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummonBook",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/gui/SummonBookScreen.java",
+          "src/main/java/net/icefighter/icesmod/network/SummonBookButtonMessage.java",
+          "src/main/java/net/icefighter/icesmod/world/inventory/SummonBookMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "AmethystBookRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_book_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AmethystBookRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmethystBookRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_book_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ices_mod/recipes/amethyst_book_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldenAppleBarrel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_apple_barrel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/item/GoldenAppleBarrelItem.java",
+          "src/main/resources/assets/ices_mod/models/item/golden_apple_barrel.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldenAppleBarrelPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_apple_barrel_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/GoldenAppleBarrelPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenAppleBarrelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_apple_barrel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ices_mod/recipes/golden_apple_barrel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlueOrchidDisplay",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_orchid_display",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/blockstates/blue_orchid_display.json",
+          "src/main/java/net/icefighter/icesmod/block/BlueOrchidDisplayBlock.java",
+          "src/main/resources/assets/ices_mod/models/item/blue_orchid_display.json",
+          "src/main/resources/assets/ices_mod/models/block/blue_orchid_display.json",
+          "src/main/resources/data/ices_mod/loot_tables/blocks/blue_orchid_display.json"
+        ]
+      }
+    },
+    {
+      "name": "BlueOrchidDisplayRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_orchid_display_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ices_mod/recipes/blue_orchid_display_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MindFuckBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mind_fuck_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ices_mod/loot_tables/blocks/mind_fuck_block.json",
+          "src/main/resources/assets/ices_mod/models/item/mind_fuck_block.json",
+          "src/main/java/net/icefighter/icesmod/block/MindFuckBlockBlock.java",
+          "src/main/resources/assets/ices_mod/models/block/mind_fuck_block.json",
+          "src/main/resources/assets/ices_mod/blockstates/mind_fuck_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Headset",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headset",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/models/item/headset_helmet.json",
+          "src/main/java/net/icefighter/icesmod/item/HeadsetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HeadsetHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headset_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HeadsetHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeadsetClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headset_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HeadsetClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoundsStops",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sounds_stops",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/SoundsStopsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "coffeestop",
+      "files": [
+        "aves_-_coffee_stop"
+      ],
+      "category": "record",
+      "subtitle": "Coffee Stop - Aves"
+    },
+    {
+      "name": "riverbanks",
+      "files": [
+        "dor_hadad_-_river_banks"
+      ],
+      "category": "record",
+      "subtitle": "River Banks - Dor Hadad"
+    },
+    {
+      "name": "distance",
+      "files": [
+        "daniel_brown_-_distance"
+      ],
+      "category": "record",
+      "subtitle": "Distance - Daniel Brown"
+    },
+    {
+      "name": "itashiba",
+      "files": [
+        "magiksolo_-_itabashi"
+      ],
+      "category": "record",
+      "subtitle": "Itashiba - Magiksolo"
+    },
+    {
+      "name": "cafedeparis",
+      "files": [
+        "milano_-_cafe_de_paris"
+      ],
+      "category": "record",
+      "subtitle": "Café de Paris - Milano"
+    },
+    {
+      "name": "radio",
+      "files": [
+        "radio"
+      ],
+      "category": "player",
+      "subtitle": "beep"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BlueOrchidDisplay"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.ices_mod.amethyst_book": "Book and Amethyst",
+      "item.ices_mod.headset_helmet": "Headset",
+      "subtitles.distance": "Distance - Daniel Brown",
+      "subtitles.itashiba": "Itashiba - Magiksolo",
+      "subtitles.cafedeparis": "Café de Paris - Milano",
+      "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
+      "subtitles.coffeestop": "Coffee Stop - Aves",
+      "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
+      "subtitles.riverbanks": "River Banks - Dor Hadad",
+      "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
+      "subtitles.radio": "beep",
+      "gui.ices_mod.summon_book.button_empty": "Send",
+      "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ices_mod",
+    "modName": "Ice\u0027s Mod",
+    "version": "1.2",
+    "author": "bleuf, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.icefighter.icesmod"
+  },
+  "mcreatorVersion": 202400342716
+}

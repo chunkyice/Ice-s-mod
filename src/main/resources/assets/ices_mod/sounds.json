@@ -1,0 +1,56 @@
+{
+  "coffeestop": {
+    "subtitle": "subtitles.coffeestop",
+    "sounds": [
+      {
+        "name": "ices_mod:aves_-_coffee_stop",
+        "stream": true
+      }
+    ]
+  },
+  "riverbanks": {
+    "subtitle": "subtitles.riverbanks",
+    "sounds": [
+      {
+        "name": "ices_mod:dor_hadad_-_river_banks",
+        "stream": true
+      }
+    ]
+  },
+  "distance": {
+    "subtitle": "subtitles.distance",
+    "sounds": [
+      {
+        "name": "ices_mod:daniel_brown_-_distance",
+        "stream": true
+      }
+    ]
+  },
+  "itashiba": {
+    "subtitle": "subtitles.itashiba",
+    "sounds": [
+      {
+        "name": "ices_mod:magiksolo_-_itabashi",
+        "stream": true
+      }
+    ]
+  },
+  "cafedeparis": {
+    "subtitle": "subtitles.cafedeparis",
+    "sounds": [
+      {
+        "name": "ices_mod:milano_-_cafe_de_paris",
+        "stream": true
+      }
+    ]
+  },
+  "radio": {
+    "subtitle": "subtitles.radio",
+    "sounds": [
+      {
+        "name": "ices_mod:radio",
+        "stream": false
+      }
+    ]
+  }
+}

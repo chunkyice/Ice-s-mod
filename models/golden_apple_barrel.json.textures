@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "golden_apple_barrel"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "ices_mod:custom/golden_apple_barrel",
+  "textures": {
+    "0": "ices_mod:block/golden_apple_barrel",
+    "particle": "ices_mod:item/golden_apple"
+  }
+}

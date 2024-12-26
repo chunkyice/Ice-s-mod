@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cherry_leaves"
+    },
+    "b": {
+      "item": "minecraft:blue_orchid"
+    },
+    "c": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "result": {
+    "item": "ices_mod:blue_orchid_display",
+    "count": 1
+  }
+}

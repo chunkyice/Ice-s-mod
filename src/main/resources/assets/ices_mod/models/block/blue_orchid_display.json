@@ -1,0 +1,9 @@
+{
+  "parent": "ices_mod:custom/blue_orchid_display",
+  "textures": {
+    "all": "ices_mod:block/blue_orchid_display",
+    "particle": "ices_mod:block/blue_orchid_display",
+    "0": "ices_mod:block/blue_orchid_display"
+  },
+  "render_type": "cutout"
+}
