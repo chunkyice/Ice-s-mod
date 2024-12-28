@@ -21,6 +21,7 @@ import net.icefighter.icesmod.init.IcesModModTabs;
 import net.icefighter.icesmod.init.IcesModModSounds;
 import net.icefighter.icesmod.init.IcesModModMenus;
 import net.icefighter.icesmod.init.IcesModModItems;
+import net.icefighter.icesmod.init.IcesModModEnchantments;
 import net.icefighter.icesmod.init.IcesModModBlocks;
 
 import java.util.function.Supplier;
@@ -47,6 +48,7 @@ public class IcesModMod {
 
 		IcesModModItems.REGISTRY.register(bus);
 
+		IcesModModEnchantments.REGISTRY.register(bus);
 		IcesModModTabs.REGISTRY.register(bus);
 
 		IcesModModMenus.REGISTRY.register(bus);

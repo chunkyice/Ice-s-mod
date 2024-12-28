@@ -29,6 +29,7 @@ public class IcesModModTabs {
 
 			tabData.accept(IcesModModItems.AMETHYST_BOOK.get());
 			tabData.accept(IcesModModItems.HEADSET_HELMET.get());
+			tabData.accept(IcesModModItems.MAGNET.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

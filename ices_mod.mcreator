@@ -8,8 +8,8 @@
       "registry_name": "amethyst_book",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ices_mod/models/item/amethyst_book.json",
-          "src/main/java/net/icefighter/icesmod/item/AmethystBookItem.java"
+          "src/main/java/net/icefighter/icesmod/item/AmethystBookItem.java",
+          "src/main/resources/assets/ices_mod/models/item/amethyst_book.json"
         ]
       }
     },
@@ -59,9 +59,9 @@
       "registry_name": "summon_book",
       "metadata": {
         "files": [
+          "src/main/java/net/icefighter/icesmod/world/inventory/SummonBookMenu.java",
           "src/main/java/net/icefighter/icesmod/client/gui/SummonBookScreen.java",
-          "src/main/java/net/icefighter/icesmod/network/SummonBookButtonMessage.java",
-          "src/main/java/net/icefighter/icesmod/world/inventory/SummonBookMenu.java"
+          "src/main/java/net/icefighter/icesmod/network/SummonBookButtonMessage.java"
         ]
       }
     },
@@ -119,8 +119,8 @@
       "registry_name": "golden_apple_barrel",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/icesmod/item/GoldenAppleBarrelItem.java",
-          "src/main/resources/assets/ices_mod/models/item/golden_apple_barrel.json"
+          "src/main/resources/assets/ices_mod/models/item/golden_apple_barrel.json",
+          "src/main/java/net/icefighter/icesmod/item/GoldenAppleBarrelItem.java"
         ]
       }
     },
@@ -162,11 +162,11 @@
       "registry_name": "blue_orchid_display",
       "metadata": {
         "files": [
+          "src/main/resources/data/ices_mod/loot_tables/blocks/blue_orchid_display.json",
+          "src/main/resources/assets/ices_mod/models/block/blue_orchid_display.json",
           "src/main/resources/assets/ices_mod/blockstates/blue_orchid_display.json",
           "src/main/java/net/icefighter/icesmod/block/BlueOrchidDisplayBlock.java",
-          "src/main/resources/assets/ices_mod/models/item/blue_orchid_display.json",
-          "src/main/resources/assets/ices_mod/models/block/blue_orchid_display.json",
-          "src/main/resources/data/ices_mod/loot_tables/blocks/blue_orchid_display.json"
+          "src/main/resources/assets/ices_mod/models/item/blue_orchid_display.json"
         ]
       }
     },
@@ -190,11 +190,11 @@
       "registry_name": "mind_fuck_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ices_mod/loot_tables/blocks/mind_fuck_block.json",
-          "src/main/resources/assets/ices_mod/models/item/mind_fuck_block.json",
           "src/main/java/net/icefighter/icesmod/block/MindFuckBlockBlock.java",
+          "src/main/resources/data/ices_mod/loot_tables/blocks/mind_fuck_block.json",
+          "src/main/resources/assets/ices_mod/blockstates/mind_fuck_block.json",
           "src/main/resources/assets/ices_mod/models/block/mind_fuck_block.json",
-          "src/main/resources/assets/ices_mod/blockstates/mind_fuck_block.json"
+          "src/main/resources/assets/ices_mod/models/item/mind_fuck_block.json"
         ]
       }
     },
@@ -206,8 +206,8 @@
       "registry_name": "headset",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ices_mod/models/item/headset_helmet.json",
-          "src/main/java/net/icefighter/icesmod/item/HeadsetItem.java"
+          "src/main/java/net/icefighter/icesmod/item/HeadsetItem.java",
+          "src/main/resources/assets/ices_mod/models/item/headset_helmet.json"
         ]
       }
     },
@@ -300,6 +300,232 @@
           }
         ]
       }
+    },
+    {
+      "name": "Magnet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/item/MagnetItem.java",
+          "src/main/resources/assets/ices_mod/models/item/magnet.json"
+        ]
+      }
+    },
+    {
+      "name": "Magnetprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/MagnetprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagnetRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/MagnetRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsion",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/enchantment/AirPropulsionEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "DisplayPropulsion1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_propulsion_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/DisplayPropulsion1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Displaypropulsion2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displaypropulsion_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/Displaypropulsion2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Displaypropulsion3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displaypropulsion_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/Displaypropulsion3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionUi",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/screens/AirPropulsionUiOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AirPropulsionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPorpulsionJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_porpulsion_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AirPorpulsionJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/network/AirPropulsionKeyMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -351,6 +577,14 @@
       ],
       "category": "player",
       "subtitle": "beep"
+    },
+    {
+      "name": "item.magnet.use",
+      "files": [
+        "electric"
+      ],
+      "category": "record",
+      "subtitle": "Magnet being used"
     }
   ],
   "tag_elements": {
@@ -366,7 +600,11 @@
       "subtitles.distance": "Distance - Daniel Brown",
       "subtitles.itashiba": "Itashiba - Magiksolo",
       "subtitles.cafedeparis": "Café de Paris - Milano",
+      "key.ices_mod.air_propulsion_key": "Air Propulsion Key",
+      "item.ices_mod.magnet": "Magnet",
+      "enchantment.ices_mod.air_propulsion": "Air Propulsion",
       "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
+      "subtitles.item.magnet.use": "Magnet being used",
       "subtitles.coffeestop": "Coffee Stop - Aves",
       "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
       "subtitles.riverbanks": "River Banks - Dor Hadad",

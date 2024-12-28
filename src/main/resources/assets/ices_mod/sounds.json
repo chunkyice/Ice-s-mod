@@ -52,5 +52,14 @@
         "stream": false
       }
     ]
+  },
+  "item.magnet.use": {
+    "subtitle": "subtitles.item.magnet.use",
+    "sounds": [
+      {
+        "name": "ices_mod:electric",
+        "stream": true
+      }
+    ]
   }
 }

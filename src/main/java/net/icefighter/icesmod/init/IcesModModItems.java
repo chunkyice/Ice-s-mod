@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.icefighter.icesmod.item.MagnetItem;
 import net.icefighter.icesmod.item.HeadsetItem;
 import net.icefighter.icesmod.item.GoldenAppleBarrelItem;
 import net.icefighter.icesmod.item.AmethystBookItem;
@@ -24,6 +25,7 @@ public class IcesModModItems {
 	public static final RegistryObject<Item> BLUE_ORCHID_DISPLAY = block(IcesModModBlocks.BLUE_ORCHID_DISPLAY);
 	public static final RegistryObject<Item> MIND_FUCK_BLOCK = block(IcesModModBlocks.MIND_FUCK_BLOCK);
 	public static final RegistryObject<Item> HEADSET_HELMET = REGISTRY.register("headset_helmet", () -> new HeadsetItem.Helmet());
+	public static final RegistryObject<Item> MAGNET = REGISTRY.register("magnet", () -> new MagnetItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Air Propulsion Key",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "AirPorpulsionJump"
+    }
+  }
+}
