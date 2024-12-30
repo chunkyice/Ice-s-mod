@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "headset_item",
+    "textureHelmet": "purple_headset_item",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,
@@ -11,7 +11,7 @@
     "enableBoots": false,
     "textureBoots": "",
     "onHelmetTick": {
-      "name": "HeadsetHelmetTickEvent"
+      "name": "PurpleheadsetHelmetTickEvent"
     },
     "creativeTabs": [
       {
@@ -19,7 +19,7 @@
       }
     ],
     "armorTextureFile": "must",
-    "helmetName": "Black Headset",
+    "helmetName": "Purple Headset",
     "bodyName": "Headset Chestplate",
     "leggingsName": "Headset Leggings",
     "bootsName": "Headset Boots",
@@ -39,7 +39,7 @@
     },
     "helmetModelName": "ModelCustomModel",
     "helmetModelPart": "Head",
-    "helmetModelTexture": "headset.png",
+    "helmetModelTexture": "purple_headset.png",
     "bodyModelName": "Default",
     "bodyModelPart": "Body",
     "armsModelPartL": "Arms L",

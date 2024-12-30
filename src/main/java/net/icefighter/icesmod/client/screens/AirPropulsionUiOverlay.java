@@ -47,13 +47,13 @@ public class AirPropulsionUiOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (DisplayPropulsion1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump1.1.png"), w / 2 + -9, h / 2 + 6, 0, 0, 18, 13, 18, 13);
+				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump1.1.png"), w / 2 + -5, h / 2 + 14, 0, 0, 12, 9, 12, 9);
 			}
 			if (Displaypropulsion2Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump1.png"), w / 2 + -19, h / 2 + 6, 0, 0, 39, 13, 39, 13);
+				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump1.png"), w / 2 + -12, h / 2 + 14, 0, 0, 26, 9, 26, 9);
 			}
 			if (Displaypropulsion3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump2.png"), w / 2 + -30, h / 2 + 6, 0, 0, 60, 13, 60, 13);
+				event.getGuiGraphics().blit(new ResourceLocation("ices_mod:textures/screens/jump2.png"), w / 2 + -19, h / 2 + 14, 0, 0, 40, 9, 40, 9);
 			}
 		}
 		RenderSystem.depthMask(true);

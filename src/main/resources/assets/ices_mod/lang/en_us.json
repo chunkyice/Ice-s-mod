@@ -1,13 +1,15 @@
 {
+  "item.ices_mod.purple_headset_helmet": "Purple Headset",
   "item.ices_mod.amethyst_book": "Book and Amethyst",
-  "item.ices_mod.headset_helmet": "Headset",
   "subtitles.distance": "Distance - Daniel Brown",
   "subtitles.itashiba": "Itashiba - Magiksolo",
   "subtitles.cafedeparis": "Café de Paris - Milano",
+  "item.ices_mod.chorus_shield": "Chorus Shield",
   "key.ices_mod.air_propulsion_key": "Air Propulsion Key",
   "item.ices_mod.magnet": "Magnet",
   "enchantment.ices_mod.air_propulsion": "Air Propulsion",
   "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
+  "item.ices_mod.blueheadset_helmet": "Headset",
   "subtitles.item.magnet.use": "Magnet being used",
   "subtitles.coffeestop": "Coffee Stop - Aves",
   "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
@@ -15,5 +17,6 @@
   "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
   "subtitles.radio": "beep",
   "gui.ices_mod.summon_book.button_empty": "Send",
-  "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e"
+  "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e",
+  "item.ices_mod.black_headset_helmet": "Black Headset"
 }

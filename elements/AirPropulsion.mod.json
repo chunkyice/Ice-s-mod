@@ -8,11 +8,7 @@
     "anvilCost": 3,
     "maxLevel": 3,
     "damageModifier": 0,
-    "incompatibleEnchantments": [
-      {
-        "value": "FEATHER_FALLING"
-      }
-    ],
+    "incompatibleEnchantments": [],
     "supportedItems": [
       {
         "value": "TAG:minecraft:enchantable/foot_armor"

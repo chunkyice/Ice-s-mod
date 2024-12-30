@@ -1,12 +1,9 @@
 
 package net.icefighter.icesmod.enchantment;
 
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.entity.EquipmentSlot;
-
-import java.util.List;
 
 public class AirPropulsionEnchantment extends Enchantment {
 	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.ARMOR_FEET;
@@ -28,11 +25,6 @@ public class AirPropulsionEnchantment extends Enchantment {
 	@Override
 	public int getMaxLevel() {
 		return 3;
-	}
-
-	@Override
-	protected boolean checkCompatibility(Enchantment enchantment) {
-		return super.checkCompatibility(enchantment) && !List.of(Enchantments.FALL_PROTECTION).contains(enchantment);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.icefighter.icesmod.procedures.HeadsetHelmetTickEventProcedure;
+import net.icefighter.icesmod.procedures.PurpleheadsetHelmetTickEventProcedure;
 import net.icefighter.icesmod.client.model.ModelCustomModel;
 
 import java.util.function.Consumer;
@@ -32,8 +32,8 @@ import java.util.Collections;
 
 import com.google.common.collect.Iterables;
 
-public abstract class HeadsetItem extends ArmorItem {
-	public HeadsetItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class PurpleHeadsetItem extends ArmorItem {
+	public PurpleHeadsetItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -62,7 +62,7 @@ public abstract class HeadsetItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "black_headset";
+				return "purple_headset";
 			}
 
 			@Override
@@ -77,7 +77,7 @@ public abstract class HeadsetItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Helmet extends HeadsetItem {
+	public static class Helmet extends PurpleHeadsetItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
@@ -108,14 +108,14 @@ public abstract class HeadsetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "ices_mod:textures/entities/headset.png";
+			return "ices_mod:textures/entities/purple_headset.png";
 		}
 
 		@Override
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				HeadsetHelmetTickEventProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+				PurpleheadsetHelmetTickEventProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 			}
 		}
 	}

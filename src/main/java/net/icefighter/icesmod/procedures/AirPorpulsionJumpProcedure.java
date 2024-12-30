@@ -33,7 +33,7 @@ public class AirPorpulsionJumpProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"particle dust 1 1 1 2 ~ ~ ~ 1 0.5 1 0.25 20 normal");
+						"particle poof ~ ~ ~ 1 0.5 1 0.25 20 normal");
 		}
 	}
 }

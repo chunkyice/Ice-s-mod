@@ -13,8 +13,8 @@
             "name": "DisplayPropulsion1"
           },
           "anchorPoint": "CENTER",
-          "x": 204,
-          "y": 126
+          "x": 208,
+          "y": 134
         }
       },
       {
@@ -26,8 +26,8 @@
             "name": "Displaypropulsion2"
           },
           "anchorPoint": "CENTER",
-          "x": 194,
-          "y": 126
+          "x": 201,
+          "y": 134
         }
       },
       {
@@ -39,8 +39,8 @@
             "name": "Displaypropulsion3"
           },
           "anchorPoint": "CENTER",
-          "x": 183,
-          "y": 126
+          "x": 194,
+          "y": 134
         }
       }
     ],

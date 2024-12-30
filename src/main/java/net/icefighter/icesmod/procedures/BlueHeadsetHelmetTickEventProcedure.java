@@ -13,7 +13,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.icefighter.icesmod.IcesModMod;
 
-public class HeadsetHelmetTickEventProcedure {
+public class BlueHeadsetHelmetTickEventProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
