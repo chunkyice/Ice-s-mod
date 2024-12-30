@@ -23,6 +23,7 @@ import net.icefighter.icesmod.item.PurpleHeadsetItem;
 import net.icefighter.icesmod.item.MagnetItem;
 import net.icefighter.icesmod.item.HeadsetItem;
 import net.icefighter.icesmod.item.GoldenAppleBarrelItem;
+import net.icefighter.icesmod.item.ClownNoseItem;
 import net.icefighter.icesmod.item.ChorusShieldItem;
 import net.icefighter.icesmod.item.BlueheadsetItem;
 import net.icefighter.icesmod.item.AmethystBookItem;
@@ -40,6 +41,7 @@ public class IcesModModItems {
 	public static final RegistryObject<Item> BLUEHEADSET_HELMET = REGISTRY.register("blueheadset_helmet", () -> new BlueheadsetItem.Helmet());
 	public static final RegistryObject<Item> PURPLE_HEADSET_HELMET = REGISTRY.register("purple_headset_helmet", () -> new PurpleHeadsetItem.Helmet());
 	public static final RegistryObject<Item> CHORUS_SHIELD = REGISTRY.register("chorus_shield", () -> new ChorusShieldItem());
+	public static final RegistryObject<Item> CLOWN_NOSE_HELMET = REGISTRY.register("clown_nose_helmet", () -> new ClownNoseItem.Helmet());
 
 	// Start of user code block custom items
 	// End of user code block custom items

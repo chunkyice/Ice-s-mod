@@ -22,4 +22,5 @@ public class IcesModModSounds {
 	public static final RegistryObject<SoundEvent> CAFEDEPARIS = REGISTRY.register("cafedeparis", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ices_mod", "cafedeparis")));
 	public static final RegistryObject<SoundEvent> RADIO = REGISTRY.register("radio", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ices_mod", "radio")));
 	public static final RegistryObject<SoundEvent> ITEM_MAGNET_USE = REGISTRY.register("item.magnet.use", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ices_mod", "item.magnet.use")));
+	public static final RegistryObject<SoundEvent> HONK = REGISTRY.register("honk", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ices_mod", "honk")));
 }

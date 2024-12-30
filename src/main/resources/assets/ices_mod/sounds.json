@@ -61,5 +61,14 @@
         "stream": true
       }
     ]
+  },
+  "honk": {
+    "subtitle": "subtitles.honk",
+    "sounds": [
+      {
+        "name": "ices_mod:clown",
+        "stream": false
+      }
+    ]
   }
 }
