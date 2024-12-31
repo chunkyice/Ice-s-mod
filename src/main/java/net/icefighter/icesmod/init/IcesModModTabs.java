@@ -29,6 +29,10 @@ public class IcesModModTabs {
 
 			tabData.accept(IcesModModItems.CHORUS_SHIELD.get());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+
+			tabData.accept(IcesModModItems.HYPNOLAMP_SPAWN_EGG.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(IcesModModItems.AMETHYST_BOOK.get());

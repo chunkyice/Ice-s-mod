@@ -731,6 +731,179 @@
           }
         ]
       }
+    },
+    {
+      "name": "Hypnospiral",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnospiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/particle/HypnospiralParticle.java",
+          "src/main/resources/assets/ices_mod/particles/hypnospiral.json"
+        ]
+      }
+    },
+    {
+      "name": "Hypnolamp",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/renderer/HypnolampRenderer.java",
+          "src/main/java/net/icefighter/icesmod/entity/HypnolampEntity.java",
+          "src/main/resources/assets/ices_mod/models/item/hypnolamp_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Hypnolamplamp",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamplamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/entity/HypnolamplampEntity.java",
+          "src/main/resources/data/ices_mod/forge/biome_modifier/hypnolamplamp_biome_modifier.json",
+          "src/main/java/net/icefighter/icesmod/client/renderer/HypnolamplampRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "HypnolampOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolampOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HypnolamplampOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamplamp_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolamplampOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HypnolampOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolampOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HypnolamplampOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamplamp_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolamplampOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -813,26 +986,29 @@
   "language_map": {
     "en_us": {
       "item.ices_mod.purple_headset_helmet": "Purple Headset",
-      "item.ices_mod.amethyst_book": "Book and Amethyst",
+      "entity.ices_mod.hypnolamplamp": "Hypnolamp\u0027s Lamp",
       "subtitles.distance": "Distance - Daniel Brown",
-      "subtitles.itashiba": "Itashiba - Magiksolo",
-      "subtitles.cafedeparis": "Café de Paris - Milano",
       "item.ices_mod.chorus_shield": "Chorus Shield",
-      "subtitles.honk": "Honk",
-      "key.ices_mod.air_propulsion_key": "Air Propulsion Key",
+      "subtitles.cafedeparis": "Café de Paris - Milano",
       "item.ices_mod.magnet": "Magnet",
       "enchantment.ices_mod.air_propulsion": "Air Propulsion",
       "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
-      "item.ices_mod.blueheadset_helmet": "Headset",
-      "item.ices_mod.clown_nose_helmet": "Clown Nose",
       "subtitles.item.magnet.use": "Magnet being used",
-      "subtitles.coffeestop": "Coffee Stop - Aves",
-      "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
       "subtitles.riverbanks": "River Banks - Dor Hadad",
-      "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
       "subtitles.radio": "beep",
       "gui.ices_mod.summon_book.button_empty": "Send",
+      "entity.ices_mod.hypnolamp": "Hypnolamp",
       "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e",
+      "item.ices_mod.amethyst_book": "Book and Amethyst",
+      "subtitles.itashiba": "Itashiba - Magiksolo",
+      "subtitles.honk": "Honk",
+      "key.ices_mod.air_propulsion_key": "Air Propulsion Key",
+      "item.ices_mod.hypnolamp_spawn_egg": "Hypnolamp Spawn Egg",
+      "item.ices_mod.blueheadset_helmet": "Headset",
+      "item.ices_mod.clown_nose_helmet": "Clown Nose",
+      "subtitles.coffeestop": "Coffee Stop - Aves",
+      "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
+      "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
       "item.ices_mod.black_headset_helmet": "Black Headset"
     }
   },
@@ -843,7 +1019,7 @@
   "workspaceSettings": {
     "modid": "ices_mod",
     "modName": "Ice\u0027s Mod",
-    "version": "1.2",
+    "version": "1.3",
     "author": "bleuf, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",

@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -42,6 +43,7 @@ public class IcesModModItems {
 	public static final RegistryObject<Item> PURPLE_HEADSET_HELMET = REGISTRY.register("purple_headset_helmet", () -> new PurpleHeadsetItem.Helmet());
 	public static final RegistryObject<Item> CHORUS_SHIELD = REGISTRY.register("chorus_shield", () -> new ChorusShieldItem());
 	public static final RegistryObject<Item> CLOWN_NOSE_HELMET = REGISTRY.register("clown_nose_helmet", () -> new ClownNoseItem.Helmet());
+	public static final RegistryObject<Item> HYPNOLAMP_SPAWN_EGG = REGISTRY.register("hypnolamp_spawn_egg", () -> new ForgeSpawnEggItem(IcesModModEntities.HYPNOLAMP, -13421773, -3407668, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
