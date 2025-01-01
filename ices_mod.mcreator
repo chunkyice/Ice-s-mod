@@ -819,6 +819,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -846,40 +850,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/icefighter/icesmod/procedures/HypnolampOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "HypnolamplampOnInitialEntitySpawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hypnolamplamp_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/icesmod/procedures/HypnolamplampOnInitialEntitySpawnProcedure.java"
         ],
         "dependencies": [
           {
@@ -971,6 +941,86 @@
       ],
       "category": "player",
       "subtitle": "Honk"
+    },
+    {
+      "name": "track2.song1",
+      "files": [
+        "track2.song1"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song2",
+      "files": [
+        "track2.song2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song3",
+      "files": [
+        "track2.song3"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song4",
+      "files": [
+        "track2.song4"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song5",
+      "files": [
+        "track2.song5"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song1",
+      "files": [
+        "track3.song1"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song2",
+      "files": [
+        "track3.song2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song3",
+      "files": [
+        "track3.song3"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song4",
+      "files": [
+        "track3.song4"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song5",
+      "files": [
+        "track3.song5"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -982,20 +1032,34 @@
       "~CUSTOM:BlueOrchidDisplay"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "TOOLS": [
+      "AmethystBook",
+      "Magnet",
+      "Headset",
+      "Blueheadset",
+      "PurpleHeadset",
+      "ClownNose"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.ices_mod.purple_headset_helmet": "Purple Headset",
       "entity.ices_mod.hypnolamplamp": "Hypnolamp\u0027s Lamp",
       "subtitles.distance": "Distance - Daniel Brown",
-      "item.ices_mod.chorus_shield": "Chorus Shield",
       "subtitles.cafedeparis": "Café de Paris - Milano",
+      "item.ices_mod.chorus_shield": "Chorus Shield",
       "item.ices_mod.magnet": "Magnet",
       "enchantment.ices_mod.air_propulsion": "Air Propulsion",
       "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
       "subtitles.item.magnet.use": "Magnet being used",
+      "subtitles.track3.song5": "",
+      "subtitles.track3.song4": "",
       "subtitles.riverbanks": "River Banks - Dor Hadad",
+      "subtitles.track3.song1": "",
+      "subtitles.track3.song3": "",
       "subtitles.radio": "beep",
+      "subtitles.track3.song2": "",
       "gui.ices_mod.summon_book.button_empty": "Send",
       "entity.ices_mod.hypnolamp": "Hypnolamp",
       "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e",
@@ -1004,12 +1068,17 @@
       "subtitles.honk": "Honk",
       "key.ices_mod.air_propulsion_key": "Air Propulsion Key",
       "item.ices_mod.hypnolamp_spawn_egg": "Hypnolamp Spawn Egg",
-      "item.ices_mod.blueheadset_helmet": "Headset",
+      "item.ices_mod.blueheadset_helmet": "Blue Headset",
       "item.ices_mod.clown_nose_helmet": "Clown Nose",
       "subtitles.coffeestop": "Coffee Stop - Aves",
       "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
       "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
-      "item.ices_mod.black_headset_helmet": "Black Headset"
+      "subtitles.track2.song5": "",
+      "subtitles.track2.song4": "",
+      "item.ices_mod.black_headset_helmet": "Black Headset",
+      "subtitles.track2.song3": "",
+      "subtitles.track2.song2": "",
+      "subtitles.track2.song1": ""
     }
   },
   "foldersRoot": {
@@ -1019,17 +1088,18 @@
   "workspaceSettings": {
     "modid": "ices_mod",
     "modName": "Ice\u0027s Mod",
-    "version": "1.3",
-    "author": "bleuf, MCreator",
+    "version": "1.4",
+    "author": "Icefighter",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "mod_icon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Made by Autism itself",
     "modElementsPackage": "net.icefighter.icesmod"
   },
   "mcreatorVersion": 202400342716
