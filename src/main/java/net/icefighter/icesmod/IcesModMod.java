@@ -19,8 +19,11 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.icefighter.icesmod.init.IcesModModTabs;
 import net.icefighter.icesmod.init.IcesModModSounds;
+import net.icefighter.icesmod.init.IcesModModParticleTypes;
 import net.icefighter.icesmod.init.IcesModModMenus;
 import net.icefighter.icesmod.init.IcesModModItems;
+import net.icefighter.icesmod.init.IcesModModEntities;
+import net.icefighter.icesmod.init.IcesModModEnchantments;
 import net.icefighter.icesmod.init.IcesModModBlocks;
 
 import java.util.function.Supplier;
@@ -46,8 +49,11 @@ public class IcesModMod {
 		IcesModModBlocks.REGISTRY.register(bus);
 
 		IcesModModItems.REGISTRY.register(bus);
-
+		IcesModModEntities.REGISTRY.register(bus);
+		IcesModModEnchantments.REGISTRY.register(bus);
 		IcesModModTabs.REGISTRY.register(bus);
+
+		IcesModModParticleTypes.REGISTRY.register(bus);
 
 		IcesModModMenus.REGISTRY.register(bus);
 

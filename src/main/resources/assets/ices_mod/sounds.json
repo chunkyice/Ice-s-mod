@@ -52,5 +52,103 @@
         "stream": false
       }
     ]
+  },
+  "track3.song1": {
+    "sounds": [
+      {
+        "name": "ices_mod:track3.song1",
+        "stream": true
+      }
+    ]
+  },
+  "track3.song2": {
+    "sounds": [
+      {
+        "name": "ices_mod:track3.song2",
+        "stream": true
+      }
+    ]
+  },
+  "honk": {
+    "subtitle": "subtitles.honk",
+    "sounds": [
+      {
+        "name": "ices_mod:clown",
+        "stream": false
+      }
+    ]
+  },
+  "track2.song4": {
+    "sounds": [
+      {
+        "name": "ices_mod:track2.song4",
+        "stream": true
+      }
+    ]
+  },
+  "track2.song5": {
+    "sounds": [
+      {
+        "name": "ices_mod:track2.song5",
+        "stream": true
+      }
+    ]
+  },
+  "track2.song2": {
+    "sounds": [
+      {
+        "name": "ices_mod:track2.song2",
+        "stream": true
+      }
+    ]
+  },
+  "item.magnet.use": {
+    "subtitle": "subtitles.item.magnet.use",
+    "sounds": [
+      {
+        "name": "ices_mod:electric",
+        "stream": true
+      }
+    ]
+  },
+  "track2.song3": {
+    "sounds": [
+      {
+        "name": "ices_mod:track2.song3",
+        "stream": true
+      }
+    ]
+  },
+  "track2.song1": {
+    "sounds": [
+      {
+        "name": "ices_mod:track2.song1",
+        "stream": true
+      }
+    ]
+  },
+  "track3.song3": {
+    "sounds": [
+      {
+        "name": "ices_mod:track3.song3",
+        "stream": true
+      }
+    ]
+  },
+  "track3.song4": {
+    "sounds": [
+      {
+        "name": "ices_mod:track3.song4",
+        "stream": true
+      }
+    ]
+  },
+  "track3.song5": {
+    "sounds": [
+      {
+        "name": "ices_mod:track3.song5",
+        "stream": true
+      }
+    ]
   }
 }

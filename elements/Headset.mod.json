@@ -19,7 +19,7 @@
       }
     ],
     "armorTextureFile": "must",
-    "helmetName": "Headset",
+    "helmetName": "Black Headset",
     "bodyName": "Headset Chestplate",
     "leggingsName": "Headset Leggings",
     "bootsName": "Headset Boots",
@@ -98,7 +98,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_generic"
+      "value": "CUSTOM:radio"
     },
     "repairItems": []
   }

@@ -300,6 +300,580 @@
           }
         ]
       }
+    },
+    {
+      "name": "HypnolamplampOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamplamp_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolamplampOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagnetRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/MagnetRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionUi",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/screens/AirPropulsionUiOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpleheadsetHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpleheadset_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/PurpleheadsetHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HypnolampOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolampOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magnetprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/MagnetprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueHeadsetHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_headset_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/BlueHeadsetHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hypnolamp",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/entity/HypnolampEntity.java",
+          "src/main/java/net/icefighter/icesmod/client/renderer/HypnolampRenderer.java",
+          "src/main/resources/assets/ices_mod/models/item/hypnolamp_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorusShield",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_shield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/models/item/chorus_shield_0.json",
+          "src/main/java/net/icefighter/icesmod/item/ChorusShieldItem.java",
+          "src/main/resources/assets/ices_mod/models/item/chorus_shield.json"
+        ]
+      }
+    },
+    {
+      "name": "HypnolampOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamp_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/HypnolampOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClownNoseProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clown_nose_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/ClownNoseProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Displaypropulsion3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displaypropulsion_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/Displaypropulsion3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Displaypropulsion2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displaypropulsion_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/Displaypropulsion2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hypnolamplamp",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnolamplamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/client/renderer/HypnolamplampRenderer.java",
+          "src/main/resources/data/ices_mod/forge/biome_modifier/hypnolamplamp_biome_modifier.json",
+          "src/main/java/net/icefighter/icesmod/entity/HypnolamplampEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DisplayPropulsion1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_propulsion_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/DisplayPropulsion1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magnet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/item/MagnetItem.java",
+          "src/main/resources/assets/ices_mod/models/item/magnet.json"
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsion",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/enchantment/AirPropulsionEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorusShieldProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_shield_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/ChorusShieldProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClownNose",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clown_nose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/item/ClownNoseItem.java",
+          "src/main/resources/assets/ices_mod/models/item/clown_nose_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "AirPorpulsionJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_porpulsion_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AirPorpulsionJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/network/AirPropulsionKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Hypnospiral",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypnospiral",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/particles/hypnospiral.json",
+          "src/main/java/net/icefighter/icesmod/client/particle/HypnospiralParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpleHeadset",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_headset",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/models/item/purple_headset_helmet.json",
+          "src/main/java/net/icefighter/icesmod/item/PurpleHeadsetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AirPropulsionProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_propulsion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/icesmod/procedures/AirPropulsionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blueheadset",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueheadset",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ices_mod/models/item/blueheadset_helmet.json",
+          "src/main/java/net/icefighter/icesmod/item/BlueheadsetItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -351,6 +925,102 @@
       ],
       "category": "player",
       "subtitle": "beep"
+    },
+    {
+      "name": "track3.song1",
+      "files": [
+        "track3.song1"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song2",
+      "files": [
+        "track3.song2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "honk",
+      "files": [
+        "clown"
+      ],
+      "category": "player",
+      "subtitle": "Honk"
+    },
+    {
+      "name": "track2.song4",
+      "files": [
+        "track2.song4"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song5",
+      "files": [
+        "track2.song5"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song2",
+      "files": [
+        "track2.song2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "item.magnet.use",
+      "files": [
+        "electric"
+      ],
+      "category": "record",
+      "subtitle": "Magnet being used"
+    },
+    {
+      "name": "track2.song3",
+      "files": [
+        "track2.song3"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track2.song1",
+      "files": [
+        "track2.song1"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song3",
+      "files": [
+        "track3.song3"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song4",
+      "files": [
+        "track3.song4"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "track3.song5",
+      "files": [
+        "track3.song5"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -361,19 +1031,31 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.ices_mod.amethyst_book": "Book and Amethyst",
-      "item.ices_mod.headset_helmet": "Headset",
-      "subtitles.itashiba": "Itashiba - Magiksolo",
       "subtitles.distance": "Distance - Daniel Brown",
       "subtitles.cafedeparis": "Café de Paris - Milano",
       "item.ices_mod.golden_apple_barrel": "Golden Apple Barrel",
+      "subtitles.item.magnet.use": "Magnet being used",
+      "subtitles.track3.song5": "",
+      "subtitles.track3.song4": "",
+      "subtitles.riverbanks": "River Banks - Dor Hadad",
+      "subtitles.track3.song1": "",
+      "subtitles.track3.song3": "",
+      "subtitles.radio": "beep",
+      "subtitles.track3.song2": "",
+      "gui.ices_mod.summon_book.button_empty": "Send",
+      "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e",
+      "item.ices_mod.amethyst_book": "Book and Amethyst",
+      "subtitles.itashiba": "Itashiba - Magiksolo",
+      "subtitles.honk": "Honk",
       "subtitles.coffeestop": "Coffee Stop - Aves",
       "block.ices_mod.blue_orchid_display": "Blue Orchid Display",
-      "subtitles.riverbanks": "River Banks - Dor Hadad",
       "block.ices_mod.mind_fuck_block": "Mind Fuck Block",
-      "subtitles.radio": "beep",
-      "gui.ices_mod.summon_book.button_empty": "Send",
-      "gui.ices_mod.summon_book.AmethystBook": "\u003cEnter Anything\u003e"
+      "subtitles.track2.song5": "",
+      "subtitles.track2.song4": "",
+      "item.ices_mod.black_headset_helmet": "Black Headset",
+      "subtitles.track2.song3": "",
+      "subtitles.track2.song2": "",
+      "subtitles.track2.song1": ""
     }
   },
   "foldersRoot": {

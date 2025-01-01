@@ -25,10 +25,22 @@ public class IcesModModTabs {
 
 			tabData.accept(IcesModModBlocks.MIND_FUCK_BLOCK.get().asItem());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
+			tabData.accept(IcesModModItems.CHORUS_SHIELD.get());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+
+			tabData.accept(IcesModModItems.HYPNOLAMP_SPAWN_EGG.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(IcesModModItems.AMETHYST_BOOK.get());
 			tabData.accept(IcesModModItems.HEADSET_HELMET.get());
+			tabData.accept(IcesModModItems.MAGNET.get());
+			tabData.accept(IcesModModItems.CLOWN_NOSE_HELMET.get());
+			tabData.accept(IcesModModItems.PURPLE_HEADSET_HELMET.get());
+			tabData.accept(IcesModModItems.BLUEHEADSET_HELMET.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

@@ -52,7 +52,7 @@ public abstract class HeadsetItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_generic"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ices_mod:radio"));
 			}
 
 			@Override
@@ -62,7 +62,7 @@ public abstract class HeadsetItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "headset";
+				return "black_headset";
 			}
 
 			@Override
