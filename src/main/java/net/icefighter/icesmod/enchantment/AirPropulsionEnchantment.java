@@ -1,8 +1,11 @@
 
 package net.icefighter.icesmod.enchantment;
 
-public class AirPropulsionEnchantment extends Enchantment {
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.entity.EquipmentSlot;
 
+public class AirPropulsionEnchantment extends Enchantment {
 	private static final EnchantmentCategory ENCHANTMENT_CATEGORY = EnchantmentCategory.ARMOR_FEET;
 
 	public AirPropulsionEnchantment() {
@@ -28,5 +31,4 @@ public class AirPropulsionEnchantment extends Enchantment {
 	public boolean isTreasureOnly() {
 		return true;
 	}
-
 }

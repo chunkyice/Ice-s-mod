@@ -1,6 +1,18 @@
 package net.icefighter.icesmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.core.registries.Registries;
+
+import net.icefighter.icesmod.entity.HypnolamplampEntity;
+
+import java.util.List;
+import java.util.Comparator;
 
 public class HypnolampOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

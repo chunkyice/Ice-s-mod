@@ -64,7 +64,7 @@ public class HeadsetClickProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.isShiftKeyDown() && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == IcesModModItems.BLACK_HEADSET_HELMET.get()) {
+		if (entity.isShiftKeyDown() && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == IcesModModItems.HEADSET_HELMET.get()) {
 			entity.getPersistentData().putBoolean("playing", false);
 			(entity instanceof LivingEntity _entUseItem4 ? _entUseItem4.getUseItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("song", 0);
 			if (entity instanceof Player _player && !_player.level().isClientSide())

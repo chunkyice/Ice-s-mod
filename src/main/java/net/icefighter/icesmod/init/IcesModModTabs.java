@@ -36,9 +36,9 @@ public class IcesModModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(IcesModModItems.AMETHYST_BOOK.get());
-			tabData.accept(IcesModModItems.HEADSET_HELMET.get());
 			tabData.accept(IcesModModItems.MAGNET.get());
 			tabData.accept(IcesModModItems.CLOWN_NOSE_HELMET.get());
+			tabData.accept(IcesModModItems.HEADSET_HELMET.get());
 			tabData.accept(IcesModModItems.PURPLE_HEADSET_HELMET.get());
 			tabData.accept(IcesModModItems.BLUEHEADSET_HELMET.get());
 

@@ -62,7 +62,7 @@ public abstract class HeadsetItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "black_headset";
+				return "headset";
 			}
 
 			@Override

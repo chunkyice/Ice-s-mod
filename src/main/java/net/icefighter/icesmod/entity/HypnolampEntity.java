@@ -1,11 +1,40 @@
 
 package net.icefighter.icesmod.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
+
+import net.icefighter.icesmod.procedures.HypnolampOnInitialEntitySpawnProcedure;
+import net.icefighter.icesmod.procedures.HypnolampOnEntityTickUpdateProcedure;
+import net.icefighter.icesmod.init.IcesModModEntities;
+
+import javax.annotation.Nullable;
 
 public class HypnolampEntity extends PathfinderMob {
-
 	public HypnolampEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(IcesModModEntities.HYPNOLAMP.get(), world);
 	}
@@ -15,7 +44,6 @@ public class HypnolampEntity extends PathfinderMob {
 		setMaxUpStep(0f);
 		xpReward = 0;
 		setNoAi(true);
-
 	}
 
 	@Override
@@ -89,11 +117,10 @@ public class HypnolampEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		HypnolampOnEntityTickUpdateProcedure.execute();
+		HypnolampOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -103,10 +130,7 @@ public class HypnolampEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 255);
-
 		return builder;
 	}
-
 }

@@ -1,6 +1,31 @@
 package net.icefighter.icesmod.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
+
+import net.icefighter.icesmod.init.IcesModModItems;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class MagnetprocedureProcedure {
@@ -21,7 +46,7 @@ public class MagnetprocedureProcedure {
 		double range = 0;
 		range = 75;
 		if (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(range)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK
-				&& itemstack.getItem() == IcesModModItems.DELETED_MOD_ELEMENT.get() && (entity instanceof Player _plrCldRem4 ? _plrCldRem4.getCooldowns().getCooldownPercent(itemstack.getItem(), 0f) * 100 : 0) == 0) {
+				&& itemstack.getItem() == IcesModModItems.MAGNET.get() && (entity instanceof Player _plrCldRem4 ? _plrCldRem4.getCooldowns().getCooldownPercent(itemstack.getItem(), 0f) * 100 : 0) == 0) {
 			entity.setDeltaMovement(
 					new Vec3(
 							((entity.getLookAngle().x * (duration / 500) + entity.getDeltaMovement().x()
